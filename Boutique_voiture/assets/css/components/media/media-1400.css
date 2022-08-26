@@ -1,0 +1,102 @@
+@media screen and (max-width: 1400px) {
+    .picker-content{
+        width: 90%;
+        
+    }
+    main{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .img-holder{
+        width: 50%;
+    }
+    .img-holder img{
+        width: 500px;
+        height: 280px;
+    }
+    .informations{
+        width: 40%;
+        padding-left: 50px;
+    }
+}
+@media screen and (max-width: 1120px) {
+    .picker-content{
+        flex-wrap: wrap;
+    }
+    .research{
+        width: 100%;
+    }
+    .picker-from, .picker-to{
+        width: 30%;
+    }
+    #from,#to{
+        width: 100%;
+        font-size: 0.7rem;
+        line-height: 28.5px;
+    }
+    .informations h2, .informations p{
+        display: none;
+    }
+    .informations{
+        width: 20%;
+        padding: 0;
+    }
+    main .container-row{
+        justify-content: space-around;
+    }
+    main .not-center{
+        justify-content: space-between;
+    }
+    .img-holder{
+        width: 80%;
+    }
+    .img-holder img{
+        width: 520px;
+        height: 300px;
+    }
+}
+@media screen and (max-width:700px) {
+    .location , .picker-from , .picker-to {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .location select{
+        width: 100%;
+    }
+    .picker-container{
+        flex-direction: column;
+    }
+    .informations{
+        width: 35%;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    main .container-row{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .img-holder{
+        width: 100%;
+    }
+    
+    .img-holder img{
+        width: 100vw;
+        height: 290px;
+    }
+    main .slider{
+        height: 300px;
+    }
+    footer{
+        flex-direction: column;
+        height:auto;
+        padding: 5px;
+        text-align: center;
+    }
+    footer img{
+        margin: 0;
+    }
+    h1{
+        text-align: center;
+    }
+}

@@ -1,0 +1,134 @@
+/* Imports */
+/* polices */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* components */
+@import url('./components/header/header.css');
+@import url('./components/date-picker/date-picker.css');
+@import url('./components/main/main.css');
+@import url('./components/footer/footer.css');
+@import url('./components/menu-hamburger/hamburger.css');
+@import url('./components/media/media-1400.css');
+
+
+/* variables globales couleurs racines */
+:root {
+    --texte-principal: #000;
+    --texte-secondaire: #f2b409;
+    --texte-menu: #fff;
+    --lien-principal: #000;
+    --lien-secondaire: #1a1c23;
+    --body-background: #ffffff;
+    --header-background: #F9F9F9;
+    --light-gray-bkg: #f1f1f1;
+    --main-bkg: #fff;
+    --button-color: #ffb85f;
+    --content-width: 1400px;
+    --button-bkg:#f9f5f5;
+    --button-green:rgb(1, 169, 1);
+}
+
+/*Styles globaux*/
+*{
+    box-sizing: border-box;
+    outline: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 100%;
+    background: var(--body-background);
+    color: var(--texte-principal);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+#app-container {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+/*
+    Classe clearfix, permet de retablir l'afficache normal une fois
+    hors du conteneur qui possède des enfants flottés
+*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*
+    classe permettant d'empeche un élément d'être sélectionné
+*/
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+/*
+    conteneur structurel
+    etablissant la zone de contenu
+*/
+.container-struct {
+    margin: 0;
+    padding: 0;
+    width: var(--content-width);
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+    conteneur en ligne largeur 100%
+*/
+.container-row {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*
+    conteneur colonne largeur 100%
+*/
+.container-col {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.simple-slider {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+

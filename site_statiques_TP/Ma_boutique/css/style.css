@@ -1,0 +1,387 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px auto 10px auto;
+    padding: 0;
+    width: 1000px;
+    box-shadow: 1px 1px 8px grey, -1px -1px 10px grey;
+}
+
+
+
+
+
+/*       header       */
+
+
+
+
+/*       header gauche       */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.header_left{
+    display: flex;
+}
+.header_left img{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 31px;
+    height: 39px;
+}
+.header_left h1{
+    margin-top: 4px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-style: italic;
+}
+.header_left p{
+    margin: 0;
+    padding-left: 30px;
+    color: rgb(224, 36, 168);
+    font-size: 15px;
+    font-style: italic;
+}
+.header_left img:hover{
+    transition: 3s;
+    transform: rotate(720deg);
+}
+/*       header milieu       */
+.contact p,h4{
+margin: 0;
+}
+h4 {
+    font-size: 30px;
+    color: rgb(103, 220, 255);
+    font-weight: normal;
+}
+.contact p {
+    background: url(http://127.0.0.1:5500/Ma_boutique/img/aide.png) no-repeat;
+    line-height: 25px;
+    padding-left: 50px;
+    color: rgb(103, 220, 255);
+}
+.account{
+    text-align: center;
+    color: white;
+    margin-right: -1px;  /* margin négative pour coller le block panier a droite de body */
+}
+.account p{
+    background-color:rgb(103, 220, 255);
+    border-bottom: 1px solid white;
+    margin: 0;
+    padding: 2px 0px;
+}
+.contact span{
+    opacity: 0.5;
+    color: gray;
+    font-style: oblique;
+}
+/*       header droite       */
+.panier{
+    background-color: rgb(103, 220, 255);
+    display: flex;
+    flex-flow: wrap row;
+}
+.panier p{
+    align-self: center;
+    border-bottom: none;
+    padding: 10px
+}
+.panier:hover img{
+    animation: gigote 1s;
+}
+
+@keyframes gigote{
+    0%{
+        transform: rotate(0deg);
+    }30%{
+        transform: rotate(-20deg);
+    }60%{
+        transform: rotate(20deg);
+    }100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+
+/*       Nav       */
+
+
+
+
+
+nav ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+}
+nav li{
+    height: 50px;
+    width: 20%;
+    line-height: 50px;
+    list-style-type:none ;
+    background-color: rgb(103, 220, 255);
+    text-align: center;
+    font-size: 18px;
+}
+/*actif aussi pour le footer*/
+a{
+    text-decoration: none;
+    color: white;
+}
+nav li:hover{
+    background-color: rgb(224, 36, 168);
+}
+.activ{
+    background-color: rgb(224, 36, 168);
+}
+
+
+
+/*       main       */
+
+/*        section 1        */
+
+section{
+    display: flex;
+}
+
+/*        section 2        */
+
+
+.information{
+    padding-top: 20px;
+}
+.information div{
+    padding-left: 10px ;
+    padding-right: 15px;
+}
+p{
+    word-spacing: -1px;
+}
+
+h2{
+    color: rgb(103, 220, 255);
+    font-size: 15px;
+    margin-top: 5px;
+}
+/*       section 2 gauche       */
+.payment , .description{
+    border-right: 1px gray solid;
+}
+.payment , .service{
+    width: 21%;
+}
+.payment div{
+    padding: 0;
+}
+/*       section 2 milieu       */
+.description{
+    width: 50%;
+    text-align: left;
+}
+/*       section 2 droite       */
+.service img{
+    margin-right: 10px;
+    float: left;
+    margin-bottom: 10px;
+}
+.ecart{
+    margin-top: 40px;
+}
+.p_top{
+    padding-top: 10px;
+}
+.p_top p{
+    margin-top: 0;
+}
+
+
+
+/*        section 3        */
+/*       les 3 block ont le meme css       */
+
+
+.PUB{
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.PUB .highlight{
+    width: 300px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 6px 3px 5px lightgrey;
+}
+h3{
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 10px 10px 0 0 ;
+    margin: 0;
+}
+.PUB .flex {
+    display: flex;
+}
+.PUB img{
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.resize{
+    padding-bottom: 12px;
+}
+.PUB a{
+    text-align: end;
+    color: rgb(103, 220, 255);
+    padding-right: 7px;
+    padding-bottom: 7px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.with_link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 5px;
+    height: 87%;
+}
+
+
+
+/*        footer        */
+
+
+
+
+footer{
+    margin-top: 10px;
+    height: 50px;
+    background-color: rgb(103, 220, 255);
+    text-align: center;
+    color: white;
+    line-height: 50px;
+}
+
+
+/*        responsive        */
+
+
+@media screen and (max-width:1000px) {
+    body{
+        width: 100%;
+    }
+    .banner img{
+        width: 100%;
+    }
+    .PUB{
+        flex-wrap: wrap;
+    }
+    .highlight{
+        margin-bottom: 10px;
+    }
+    .payment img{
+        width: 100%;
+    }
+    .service p {
+        line-height: 20px;
+        margin-top:0;
+    }
+    .service div{
+        padding: 0; /*pour eviter que le texte passe sous l'image*/
+    }
+    nav ul{
+        word-wrap: normal;
+    }
+}
+
+
+/*        responsive 2        */
+
+
+@media screen and (max-width:860px) {
+    header{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header_left{
+        justify-content: flex-end;
+    }
+    .name{
+        padding-right: 16%;
+    }
+    .header_left, .account{
+        width: 50%;
+    }
+    .contact {
+        width: 40%;
+        padding-left: 10%;
+    }    
+    .panier{
+        justify-content: center;
+    }
+}
+@media screen and (max-width:703px) {
+    header{
+        justify-content: space-around;
+    }
+    .header_left{
+        width: 45%;
+        align-items: center;
+    }
+    .name{
+        padding-right:5%;
+    }
+    .header_left h1{
+        font-size: 30px;
+    }
+    h4{
+        font-size: 25px;
+    }
+
+     /* 
+    .contact{
+        padding: 0px;
+        width: 50%;
+    }
+    .header_left{
+        width: 100%;
+        justify-content: center;
+    } */
+    .information{
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+    .description{
+        border-right: 0;
+    }
+    .description{
+        width: 100%;
+        text-align: center;
+        line-height: 30px;
+        border-bottom: 1px gray solid;
+        border-top: 1px gray solid;
+        padding: 0px;
+    }
+    .payment{
+        width: 48%;
+    }
+    .payment img{
+        width: 80%;
+    }
+    .payment div{
+        padding-bottom: 30px;
+    }
+    .service{
+        position: absolute;
+        top: 25px;
+        right: 0;
+        width: 45%;
+    }
+}

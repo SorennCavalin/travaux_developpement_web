@@ -1,0 +1,207 @@
+/*----------------- GENERAL -----------------*/
+/*https://fonts.google.com/specimen/Kufam?sidebar.open=true&selection.family=Kufam:wght@400;500;700*/
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@400;500;700&display=swap'); /* Import de la police Kufam de google font avec différentes graisses */
+ 
+html, body{ 
+    margin: 0; /* retrait du margin prédéfinit pour éviter les différences de résultats sur les navigateurs */
+    padding: 0; /* retrait du padding pour les mêmes raison */
+    font-family: 'Kufam', cursive; /* on définit la police Kufam qu'on à importé comme la police de base du document */
+    text-shadow: 1px 1px 2px #000000a6; /* le texte étant blanc sur des couleurs le text shadow permet de le faire mieux ressortir (x , y, dispersion, couleur)*/
+    /* il est recommandé d'utiliser un générateur pour faire des tests et comprendre le fonctionnement */
+    color: white;
+    font-size: 16px;
+}
+header{
+    background: linear-gradient(rgb(45, 253, 149), rgb(34,193,195));
+    height: 150px;
+    box-shadow: 0px 5px 10px gray;
+}
+.image_ombre{
+    margin-top: 10px;
+    margin-left: 5px;
+    position: relative;
+}
+.logo_titre{
+    display: flex;
+}
+.ombre{
+ width: 20px;
+ height: 40px;
+ background: gray;
+ opacity: 0.05;
+ border-radius: 50%;
+ position: absolute;
+ top: 5px;
+left: 20px;
+}
+.header_top{
+    width: 100%;
+display: flex;
+flex-flow: row wrap;
+}
+.header_top h1{
+display: inline-block;
+margin: 0;
+font-size: 22px;
+margin-left: 10px;
+margin-top: 22px;
+
+}
+nav{
+    align-self: flex-end;
+    margin-left: auto;
+}
+.header_top li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px 10px ;
+
+}
+
+.header_bot{
+    border: 4px white double ;
+    padding: 10px;
+    margin-top: 45px;
+}
+
+main{
+    margin-top: 20px;
+}
+section{
+    margin: auto;
+    width: 67%;
+    padding: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #cde4e2 , -5px -5px 5px #cde4e2  ;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.rose{
+    background: linear-gradient(rgb(191,129,148),rgb(86,166,241));
+}
+.gauche{
+    text-align: left;
+}
+.milieu{
+    text-align: center;
+}
+.droite{
+    text-align: right;
+}
+section img{
+    float: left;
+    border-radius: 50%;
+    margin-left: 100px;
+    margin-right: 200px;
+    margin-top: 30px; 
+    margin-bottom: 11.5vh;
+    width:300px; height: 300px;
+}
+.turquoise img{
+    float: right;
+    margin-left: 200px;
+}
+.turquoise{
+    background: linear-gradient(rgb(97,227,194),rgb(70,134,195));
+}
+.orange{
+    background: linear-gradient(rgb(226,132,23),rgb(92,144,181));
+}
+footer{
+    background: linear-gradient( rgb(34,193,195),rgb(45, 253, 149));
+    box-shadow: -0px -5px 10px gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin-top: 50px;
+}
+footer p{
+    opacity: 0.8;
+}
+footer li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+@media screen and (max-width: 1500px) {
+    section img{
+        width: 200px;
+        height: 200px;
+    }
+    section img{
+        margin: 0;
+        margin-right: 20px;
+    }
+    .turquoise img{
+        margin: 0;
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 830px) {
+    .header_top{
+        display: block;
+    }
+    .header_top h1{
+        margin-top: 22px;
+    }
+    .logo_titre{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .header_top nav{
+        width: 70%;
+        margin: auto;
+    }
+    ul{
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    .header_bot{
+        margin-top: 8px;
+    }
+    section{
+        position: relative;
+        
+    }
+    section img{
+        width: 124px;
+        height: 124px;
+    }
+    .informations{
+        z-index: 2;
+        position:relative;
+        text-align: center;
+    }
+    .informations h1{
+        margin-top: 20px;
+        margin-bottom: 70px;
+    }
+    .turquoise h1{
+        margin-top: 30px;
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    footer ul{
+        display: block;
+    }
+}
+@media screen and (max-width:500px) {
+    header{
+        height: 170px;
+    }
+    section img{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media screen and (min-width: 1700px) {
+    section{
+        height: 374px;
+    }
+}

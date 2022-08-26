@@ -1,0 +1,411 @@
+@font-face{
+    font-family: "pinyon";
+    src: url("../font/PinyonScript-Regular.ttf");
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.assombrissement{
+    position: absolute;
+    top: 0;
+    left: 5%;
+    filter: brightness(50%);
+    height: 700px;
+    width: 90%;
+    z-index: 1;
+    overflow: hidden;
+}
+.assombrissement img{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+.header-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    padding-left: 40px;
+    width: 160px;
+    display: inline-block;
+}
+nav{
+    width: 865px;
+    float: right;
+}
+li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: white;
+    
+    border: 1px solid transparent;
+}
+.text-faded{
+    opacity: 0.8;
+    text-transform: uppercase;
+    font-size: large;
+}
+li a{
+    padding: 15px 5px;
+}
+header li:hover a{
+    border: 1px solid yellow;
+}
+h2{
+    color: #d5a527;
+    font-family: pinyon;
+    text-transform: capitalize;
+}
+header,.bg-salle h2{
+    font-size: 3rem;
+}
+h1{
+    text-transform: uppercase;
+}
+header h1{
+    font-size: 5rem
+}
+h3{
+    padding-bottom: 50px;
+    text-transform: uppercase;
+}
+.premiere{
+    width: 60%;
+    margin: auto;
+}
+.prems{
+    display: flex;
+    align-items: center;
+}
+.premiere h2{
+    margin-top: 0;
+}
+a:hover .anim{
+padding-left: 5px;
+transition: 0.5s;
+}
+section a {
+    color: #d5a527;
+    text-decoration: none;
+}
+.premiere .img-holder{
+    border: 1px solid yellow;
+    padding: 20px 10px 0 0;
+    position: relative;
+    z-index: 2;
+    top: -10px;
+    margin-right: 50px ;
+}
+.deux{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+.deux .img-holder{
+    border: 1px solid yellow;
+    padding: 20px 0px 0 10px;
+    position: relative;
+    top: -10px;
+    margin-left: 50px ;
+}
+.img-holder img{
+    margin-bottom: -4px;
+}
+.align-top a,p,h2,h1{
+    margin: 30px 0;
+}
+.deuxieme{
+    width: 70%;
+    margin: auto;
+}
+.information , .flex{
+    display: flex;
+}
+.information{
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.information ul {
+    width: 80%;
+    display: flex;
+    margin-top: 50px ;
+    margin-bottom: 80px;
+    justify-content: space-around;
+}
+.information li:hover a{
+    border: 1px yellow solid;
+}
+.flex{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flex div{
+    width: 45%;
+}
+.flex p{
+    margin-bottom: 5px;
+}
+.flex h2{
+    margin-top: 0;
+}
+.gauche{
+    float: left;
+    margin-right: 20px;
+    height: 100%;
+}
+.droite{
+    float:right;
+    margin-left: 20px;
+    height: 100%;
+}
+.bas{
+    margin-top: 50px;
+}
+.haut{
+    margin-bottom: 50px;
+}
+.flex .text-faded{
+    text-transform: none;
+}
+.flex .droite.text-faded{
+    text-align: right;
+}
+.flex .gauche.text-faded{
+    text-align: left;
+}
+.chef{
+    width: 60%;
+    margin: 80px auto  50px auto;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.chef p{
+    margin-bottom: 80px;
+}
+.bg-salle{
+    background: url(../img/reservation.jpg) no-repeat ;
+    background-size: cover;
+    height: 500px;
+    width: 90%;
+    padding-top: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.selection{
+    margin: 20px 0 50px 0;
+    flex-wrap: wrap;
+}
+input,.number{
+    margin: 20px 20px;
+}
+.number ul{
+    display: none;
+    padding: 0;
+    margin-top: 10px;
+    height: 40px;
+}
+.number:focus ul{
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+}
+input , button,select{
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 1px solid rgb(121, 120, 120);
+    color: gray;
+    
+}
+.submit{
+    background-color: #eece40;
+    border: 1px  solid #eece40;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    margin-bottom: 100px;
+}
+.share{
+    width: 60%;
+    text-align: right;
+    margin: auto;
+}
+.share div{
+    display: flex;
+    flex-flow: row wrap;
+}
+.share a{
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
+.recipe-shared{
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.calendar{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 15px;
+}
+.share .text-faded{
+    text-transform: none;
+}
+iframe{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 150px;
+
+}
+footer{
+    margin-top: -4px;
+    padding-top: 150px;
+    padding-left: 100px;
+    width: 100%;
+    background: url(../img/splash.png) no-repeat;
+    background-color: gray;
+    backdrop-filter: grayscale(50%);
+    background-position: right bottom;
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.footer-flex div{
+    width: 33%;
+    padding-right: 50px;
+}
+footer h2{
+    font-family:Arial, Helvetica, sans-serif
+}
+footer .text-faded{
+    text-transform:none;
+}
+.no-margin{
+    margin-bottom: 0;
+}
+
+
+@media screen and (max-width:1700px) {
+    .flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex div{
+        width: 100%;
+    }
+    .chef{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-flex{
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-flex div{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .chef img{
+        margin-top: 20px;
+    }
+    .header-top{
+        flex-direction: column;
+    }
+    .logo{
+        margin-bottom: 20px;
+    }
+    .premiere{
+        width: 100%;
+        padding: 0 50px;
+    }
+    nav{
+        width: 100%;
+    }
+    .information{
+        width: 80%;
+    }
+    .deuxieme ul{
+        width: 100%;
+    }
+    .bg-salle h2 ,h1,p{
+        margin: 10px 0;
+    }
+    .selection{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    }
+    input,.number{
+        margin: 20px 10px;
+    }
+}
+@media screen and (max-width:650px) {
+    header ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    header li{
+        width: 30%;
+        justify-content: center;
+        text-align: center;
+    }
+    section li{
+        margin: 0 10px;
+    }
+    .bg-salle{
+        height: 600px;
+    }
+    .prems,.deux{
+        flex-direction: column;
+    }
+    .deux .img-holder,.prems .img-holder{
+        margin: auto;
+    }
+}
